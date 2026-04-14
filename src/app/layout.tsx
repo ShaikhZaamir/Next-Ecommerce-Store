@@ -43,15 +43,10 @@ export default async function RootLayout({
 
         <main className="flex-1">
           <Hero />
-
           <PromotionStrip />
-
           <Collection />
-
           <Newsletter />
-
           <Footer />
-
           {children}
         </main>
 
