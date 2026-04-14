@@ -4,7 +4,11 @@ import { ShoppingCart, User, Menu } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
 
-export default function Navbar() {
+type NavbarProps = {
+    isLoggedIn: boolean;
+};
+
+export default function Navbar({ isLoggedIn }: NavbarProps) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
